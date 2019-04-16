@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="FlightSimulator.Views.ConroSide"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlightSimulator.Views"
+        xmlns:Controls="clr-namespace:FlightSimulator.Views"
+        mc:Ignorable="d">
+    <Grid MinHeight="430" MinWidth="470">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TabControl  Grid.Row="0" Grid.Column="0">
+            <TabItem Header="Manual">
+                <Controls:Manual></Controls:Manual>
+            </TabItem>
+            <TabItem Header="Auto Pilot">
+                <Controls:AutoPilot />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

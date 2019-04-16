@@ -1,0 +1,36 @@
+﻿<Window x:Class="FlightSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlightSimulator"
+        xmlns:locals="clr-namespace:FlightSimulator.ViewModels.Windows"
+        xmlns:Controls="clr-namespace:FlightSimulator.Views"
+
+        mc:Ignorable="d"
+        Title="MainWindow" Height="570" Width="1100" MinHeight="570" MinWidth="1100">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Viewbox>
+            
+        </Viewbox>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Flight "   Foreground="Purple" FontStyle="Oblique" HorizontalAlignment="Right" FontSize="30"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="0" Text="Simulator "  Foreground="Purple" FontStyle="Oblique"  FontSize="30" HorizontalAlignment="Left"></TextBlock>
+        
+        
+        <Controls:ConroSide Grid.Column="1" Grid.Row="1" ></Controls:ConroSide>
+        <Controls:Mapside  Grid.Column="0" Grid.Row="1"></Controls:Mapside>
+    </Grid>
+
+
+</Window>
